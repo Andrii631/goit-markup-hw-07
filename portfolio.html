@@ -240,8 +240,8 @@
     </main>
 
     <footer class="footer">
-      <ul class="list footer-list container">
-        <li class="footer-box">
+      <div class="footer-cont container">
+        <div class="footer-box">
           <a href="./index.html" class="link footer-link"
             ><span class="web">Web</span
             ><span class="web-studio-foot">Studio</span>
@@ -250,8 +250,8 @@
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
           </p>
-        </li>
-        <li>
+        </div>
+        <div>
           <p class="footer-media">Social media</p>
           <ul class="footer-soc-list list">
             <li class="footer-soc-item">
@@ -283,20 +283,27 @@
               </a>
             </li>
           </ul>
-        </li>
-        <li>
+        </div>
+        <div>
           <p class="footer-media">Subscribe</p>
-          <div class="footer-box-input">
-            <input type="email" name="email" class="footer-input" placeholder="E-mail">
-           <div class="footer-but-icon">
-              <button type="button" class="footer-but">Subscribe</button>
+          <form class="footer-box-input">
+            <input
+              type="email"
+              name="email"
+              class="footer-input"
+              placeholder="E-mail"
+            />
+
+            <button type="submit" class="footer-but">
+              Subscribe
               <svg width="24" height="24" class="footer-icon">
                 <use href="./images/icons.svg#icon-twit"></use>
               </svg>
-           </div >
-          </div>
-        </li>
-      </ul>
+            </button>
+          </form>
+        </div>
+      </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

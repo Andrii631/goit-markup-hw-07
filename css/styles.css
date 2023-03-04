@@ -52,10 +52,10 @@ body{
     letter-spacing: 0.02em;
 }
 .container{
+    min-width: 428px;
     width: 100%;
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin: 0 auto;
     
 }
@@ -252,9 +252,9 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 1440px;   
-    padding-top: 188px;
-    padding-bottom: 188px;
+    width: 100%;
+    padding-top: 112px;
+    padding-bottom: 112px;
 }
 .herov-box{
     display: flex;
@@ -262,12 +262,13 @@ body{
     flex-direction: column;
 }
 .herov-text{ 
-    font-size: 56px;
-    line-height: 1.07;    
-    align-items: center;
+    font-size: 36px;
+    line-height: 1.11; 
     color: var(--herov-text-color);
     margin-bottom: 48px;
-    width: 500px;
+    width: 100%; 
+    text-transform: capitalize;
+    text-align: center;
 }
 .herov-btn{
     font-weight: 500;
@@ -276,79 +277,59 @@ body{
     align-items: center;
     letter-spacing: 0.04em;
     color: var(--herov-text-color);
-    height: 55px;
+    height: 56px;
     padding: 16px 32px;
     transition: background-color var(--tra);
 
 }
 
 /* privileges section  */
-.privil-box{
-    display: flex;
-    gap: 24px;
-    
-   
-}
-.privil-container{
-    width: 264px;
-    height: 224px;
-}
-
 .privil{
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .privil-item {
-    background-color: var(--tem-logo-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 112px;
-    margin-bottom: 8px;
-
+    display: none;
 }
 /* .privil-icon {
 
 } */
 
 .privil-titel{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-size: 36px;
+    line-height: 1.11;
     margin-bottom: 8px;
+    text-align: center;
+    text-transform: capitalize;
 }
 .privil-paragraph{
     color: var(--titel-text-color);
     width: 100%;
+    max-width: 396px;
+    margin: 0 auto 72px auto;
+}
+.privil-paragraph-last{
+    margin-bottom: 0;
 }
 
 /* doing section  */
 .doing{
-    padding-bottom: 120px;
-}
-.doing-text {
-    font-size: 36px;
-    line-height: 0.9;
-    text-align: center;
-    text-transform: capitalize;
-    margin: 0 auto 72px auto;
-}
- /* .doing-img{
-} */
-.doing-box{
-    display: flex;
-    gap: 24px;
-    justify-content: center;
+    display: none;
 }
 
 /* team section */
-
 .team{
     background: var(--tem-logo-color);
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+.team-box{
+    display: flex;
+    gap: 72px;
+    flex-direction: column;
+    align-items: center;
+    
 }
 .team-text {
     font-size: 36px;
@@ -357,16 +338,11 @@ body{
     text-transform: capitalize;
     margin: 0 auto 72px auto;
 }
-.team-box{
-    display: flex;
-    gap: 24px;
-    
-    
-}
+
 .team-list{
     background: var(--herov-text-color);
     padding-top: 32px;
-    padding-bottom: 32px;border-bottom-left-radius: 4px;
+    padding-bottom: 32px;
     border-bottom-right-radius: 4px;
 
 
@@ -415,24 +391,25 @@ body{
 
 /* customers */
 .customers {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 .cusromers-titel {    
     font-size: 36px;
-    line-height: 0.9;
+    line-height: 1.11;
     text-align: center;
     text-transform: capitalize;
     margin: 0 auto 72px auto;
 }
 .customers-list {
     display: flex;
-    gap: 24px;
+    gap: 72px 16px;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 .customers-item{    
-    width: 168px;
+    width: 190px;
     height: 88px;
 }
 .customers-link { 
@@ -453,17 +430,20 @@ body{
 
 
 /* footer section */
+.footer{  
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
 .footer-cont{
     display: flex;
-    gap: 120px;
-}
-.footer{  
-    padding-top: 100px;
-    padding-bottom: 100px;
+    gap: 72px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .footer-box{
     display: flex;    
     flex-direction: column;
+    align-items: center;
 }
 .footer-link{
     margin-bottom: 16px;;
@@ -471,11 +451,14 @@ body{
 
 .footer-paragraph {
     color: var(--footer-text-color);    
-    width: 264px;
+    width: 100%;
+    max-width: 268px;
 }
 .footer-media{
     color: var(--footer-text-color);
     font-weight: 500;
+    text-align: center;
+    margin-bottom: 16px;
 }
 
 .footer-soc-list {
@@ -500,19 +483,21 @@ body{
 
 .footer-box-input {
     display: flex;
-    margin-top: 16px;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 .footer-input {    
     border: 1px solid var(--footer-input);
     border-radius: 4px;
-    width: 264px;
+    width: 396px;
     height: 40px;
     background-color: transparent;
     padding: 8px 16px;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.04em;
-    margin-right: 24px;
     color: var(--footer-text-color);
     outline: none;
 }
@@ -521,15 +506,15 @@ body{
     background: var(--btn-fon-text-color);
     letter-spacing: 0.04em;
     color: var(--herov-text-color);
-    height: 24px;
-    width: 117px;
+    width: 165px;
+    height: 40px;    
     padding: 8px 24px;
     display: flex;
-    box-sizing: content-box;
     align-items: center;
     transition: background-color var(--tra);
     position: relative;
 }
+
 
 .footer-icon{
     position: absolute;
@@ -623,11 +608,11 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 408px;
+    width: 392px;
     min-height: 576px;
     background-color: var(--modal-bc);
     border-radius: 1px;
-    padding: 24px;
+    padding: 24px 16px;
     transition: transform var(--tra);
 
 }
@@ -786,4 +771,238 @@ body{
     border-color: var(--link-icon-btn);
 }
 .icon-chec {
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        max-width: 768px;                     
+    }
+    .header-navig::after{
+        content: '';
+        width: auto;
+        height: 4px;
+        background-color: var(--link-icon-btn);
+        border-radius: 2px;
+        margin-top: 24px;
+        display: flex;
+    
+    } 
+       
+    .navig{
+        background-color: var(--herov-text-color);
+        height: 76px;
+        border: 2px solid rgb(244, 244, 253);
+        border-top: 0;
+        border-left: 0;
+        border-right: 0; 
+
+    }
+    .navigator-item{
+        transition: box-shadow var(--tra);
+    }
+    .navig-nav{
+        display: flex;
+        align-items: center;
+    }
+    .header-list{
+        display: flex;
+        gap:  40px;
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+    .navig-container{
+        display: flex;
+        align-items: center;
+    }
+
+    .header-link{ 
+        padding-top: 24px;
+        padding-bottom: 28px;
+        height: 76px;
+        display: block;
+
+    }
+
+    .header-kontakt{  
+        color: var(--titel-text-color);      
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.04em;
+
+    }
+    .header-link-cont{
+        margin-bottom: 4px;
+    }
+    .contakt-box{        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .header-navig{
+        text-decoration: none;
+        color: var(--link-icon-btn);
+    }
+
+
+    .herov{
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+    .herov-text{
+        font-size: 56px;
+        line-height: 1.07;
+        width: 496px;
+
+    }
+    .privil-box{
+        display: flex;
+        gap: 72px 24px;
+        flex-wrap: wrap;
+    }
+    .privil-titel{
+        text-align: left;
+    }
+    .privil-paragraph{
+        width: 356px;
+        margin: 0;
+    }
+
+    .team{
+        padding-bottom: 104px;
+    }
+    .team-box{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 64px 24px;
+    }
+    .customers-list{
+        gap: 72px 24px;
+    }
+    .footer-cont{
+        gap: 72px 24px;
+        padding-left: 108px;
+        justify-content: start;
+    }
+    .footer-box{
+        align-items: start;
+    }
+    .footer-media{
+        text-align: left;
+    }
+    .footer-box-input{
+        gap: 24px;
+    }
+    .footer-input{
+        width: 264px;
+    }
+    .modal{
+        width: 392px;
+        padding: 24px;
+    }
+
+
+}
+@media screen and (min-width: 1200px) {
+    .container{
+        max-width: 1158px;        
+        padding-left: 15px;
+        padding-right: 15px;                        
+    }
+    .header-link-cont{        
+        padding-top: 24px;
+        padding-bottom: 28px;
+        height: 76px;
+        display: block;
+        margin-left: 40px;
+    }
+
+    /* privileges section  */
+    .privil{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .privil-item {
+        background-color: var(--tem-logo-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 112px;
+        margin-bottom: 8px;
+
+    }
+    .privil-box{        
+        flex-wrap: nowrap;
+        
+    }
+        
+    .privil-titel{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .privil-paragraph{
+        width: 100%;
+    }
+
+    /* doing section  */
+    .doing{
+        display: block;
+        padding-bottom: 120px;
+    }
+    .doing-text {
+        font-size: 36px;
+        line-height: 0.9;
+        text-align: center;
+        text-transform: capitalize;
+        margin: 0 auto 72px auto;
+    }
+    /* .doing-img{
+    } */
+    .doing-box{
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+    }
+
+    /* team section */
+
+    .team{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .team-box{
+        gap: 24px;
+        
+        
+    }
+
+    .customers {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .customers-list {
+        gap: 24px;
+    }
+    .customers-item{    
+        width: 168px;
+    }
+    .footer{
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+    .footer-cont{
+        gap: 0;
+        flex-wrap: nowrap;
+
+    }
+    .footer-social{
+        margin-left: 120px;
+        margin-right: 80px;
+    }
+    .footer-box-input{
+        flex-wrap: nowrap;
+    }
 }
