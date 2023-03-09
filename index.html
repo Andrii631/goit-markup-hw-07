@@ -21,7 +21,7 @@
     />
   </head>
   <body>
-    <!-- <header class="navig">
+    <header class="navig">
       <div class="container navig-container">
         <nav class="navig-nav">
           <a href="./index.html" class="link header-link">
@@ -53,8 +53,81 @@
             >
           </li>
         </ul>
+        <button type="button" class="link menu-open js-open-menu" aria-expanded="false"
+        aria-controls="mobile-menu">      
+          <svg class="header-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header>  -->
+
+      <div class="menu js-menu-container is-open" id="mobile-menu">
+        <div class="menu-conteiner">
+          <button class="menu-close js-close-menu" type="button"  >
+            <svg width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-18dp"></use>
+            </svg>
+          </button>
+
+          <div class="menu-kontakt">
+            <ul class="list menu-list">
+              <li>
+                <a href="./index.html" class="menu-link link">Studio</a>
+              </li>
+              <li>
+                <a href="./portfolio.html" class="link menu-link">Portfolio</a>
+              </li>
+              <li>
+                <a href="#" class="menu-navig">Contacts</a>
+              </li>
+            </ul>
+
+            <ul class="list menu-box">
+              <li class="menu-kontakt">
+                <a class="link menu-cont" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a class="link menu-link-cont" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <ul class="menu-soc-list list">
+            <li class="team-soc-item">
+              <a href="" class="team-soc-link link">
+                <svg class="team-soc-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-item">
+              <a href="" class="team-soc-link link">
+                <svg class="team-soc-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-item">
+              <a href="" class="team-soc-link link">
+                <svg class="team-soc-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-item">
+              <a href="" class="team-soc-link link">
+                <svg class="team-soc-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
     <main>
       <section class="herov">
@@ -128,6 +201,7 @@
           <ul class="list doing-box">
             <li>
               <img
+                srcset="./images/img.jpg 1x, ./images/img2x.jpg 2x"
                 width="360"
                 height="300"
                 src="./images/img.jpg"
@@ -137,6 +211,10 @@
             </li>
             <li>
               <img
+                srcset="
+                  ./images/rectangle71.jpg    1x,
+                  ./images/rectangle71_2x.jpg 2x
+                "
                 width="360"
                 height="300"
                 src="./images/rectangle71.jpg"
@@ -146,6 +224,10 @@
             </li>
             <li>
               <img
+                srcset="
+                  ./images/rectangle711.jpg    1x,
+                  ./images/rectangle711_2x.jpg 2x
+                "
                 width="360"
                 height="300"
                 src="./images/rectangle711.jpg"
@@ -163,6 +245,7 @@
           <ul class="list team-box">
             <li class="team-item">
               <img
+                srcset="./images/img1.jpg 1x, ./images/img1_2x.jpg 2x"
                 width="260"
                 height="260"
                 src="./images/img1.jpg"
@@ -206,6 +289,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/img2.jpg 1x, ./images/img2_2x.jpg 2x"
                 width="260"
                 height="260"
                 src="./images/img2.jpg"
@@ -249,6 +333,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/img3.jpg 1x, ./images/img3_2x.jpg 2x"
                 width="260"
                 height="260"
                 src="./images/img3.jpg"
@@ -293,6 +378,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/img4.jpg 1x, ./images/img4_2x.jpg 2x"
                 width="260"
                 height="260"
                 src="./images/img4.jpg"
@@ -337,57 +423,55 @@
           </ul>
         </div>
       </section>
-      
-      <section class="customers container">
-      <h2 class="cusromers-titel">Customers</h2>
-      <ul class="list customers-list">
-        <li class="customers-item">
-          <a href="#" class="customers-link">
-            <svg class="customers-icon" width="104" height="56">
-              <use href="./images/icons.svg#icon-group"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="customers-item">
-          <a href="#" class="customers-link">
-            <svg class="customers-icon" width="104" height="56">
-              <use href="./images/icons.svg#icon-group1"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="customers-item">
-          <a href="#" class="customers-link">
-            <svg class="customers-icon" width="104" height="56">
-              <use href="./images/icons.svg#icon-group2"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="customers-item">
-          <a href="#" class="customers-link">
-            <svg class="customers-icon" width="104" height="56">
-              <use href="./images/icons.svg#icon-group3"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="customers-item">
-          <a href="#" class="customers-link">
-            <svg class="customers-icon" width="104" height="56">
-              <use href="./images/icons.svg#icon-group4"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="customers-item">
-          <a href="#" class="customers-link">
-            <svg class="customers-icon" width="104" height="56">
-              <use href="./images/icons.svg#icon-group5"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </section> 
-    </main>  
 
-    
+      <section class="customers container">
+        <h2 class="cusromers-titel">Customers</h2>
+        <ul class="list customers-list">
+          <li class="customers-item">
+            <a href="#" class="customers-link">
+              <svg class="customers-icon" width="104" height="56">
+                <use href="./images/icons.svg#icon-group"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="customers-item">
+            <a href="#" class="customers-link">
+              <svg class="customers-icon" width="104" height="56">
+                <use href="./images/icons.svg#icon-group1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="customers-item">
+            <a href="#" class="customers-link">
+              <svg class="customers-icon" width="104" height="56">
+                <use href="./images/icons.svg#icon-group2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="customers-item">
+            <a href="#" class="customers-link">
+              <svg class="customers-icon" width="104" height="56">
+                <use href="./images/icons.svg#icon-group3"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="customers-item">
+            <a href="#" class="customers-link">
+              <svg class="customers-icon" width="104" height="56">
+                <use href="./images/icons.svg#icon-group4"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="customers-item">
+            <a href="#" class="customers-link">
+              <svg class="customers-icon" width="104" height="56">
+                <use href="./images/icons.svg#icon-group5"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="footer-cont container">
@@ -543,6 +627,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <!-- <script src="./js/mobile-menu.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
