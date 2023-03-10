@@ -254,11 +254,13 @@ body{
     transform: translateY(0);
     transition: transform var(--tra);
     overflow-y: scroll;
+    display: flex;
 }
 .menu-conteiner{
     padding: 40px;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .menu-open {
     background-color: transparent;
@@ -271,6 +273,9 @@ body{
     transition: stroke var(--tra);
 }
 .menu-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
     background-color: var(--footer-text-color);
     border: 1px solid var(--modal-bor);
     border-radius: 50%;
@@ -280,11 +285,10 @@ body{
     align-items: center;
     justify-content: center;
     transition: background-color var(--tra), fill var(--tra);
-    margin-left: auto;
     cursor: pointer;
 }
 .menu-list {
-    margin-top: 16px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -316,7 +320,7 @@ body{
 .menu-kontakt {
     display: flex;
     flex-direction: column;
-    margin-top: auto;   
+    margin-top: auto;
     
     
 }
