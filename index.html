@@ -53,8 +53,12 @@
             >
           </li>
         </ul>
-        <button type="button" class="link menu-open js-open-menu" aria-expanded="false"
-        aria-controls="mobile-menu">      
+        <button
+          type="button"
+          class="link menu-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="header-icon" width="32" height="22">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
@@ -62,28 +66,30 @@
       </div>
 
       <div class="menu js-menu-container is-open" id="mobile-menu">
-        <div class="menu-conteiner">
-          <button class="menu-close js-close-menu" type="button"  >
-            <svg width="8" height="8">
-              <use href="./images/icons.svg#icon-close-black-18dp"></use>
-            </svg>
-          </button>
+        <div class="menu-conteiner">          
+            <button class="menu-close js-close-menu" type="button">
+              <svg width="8" height="8">
+                <use href="./images/icons.svg#icon-close-black-18dp"></use>
+              </svg>
+            </button>
+          
 
-          <div class="menu-kontakt">
             <ul class="list menu-list">
               <li>
-                <a href="./index.html" class="menu-link link">Studio</a>
+                <a href="./index.html" class="menu-navig">Studio</a>
               </li>
               <li>
                 <a href="./portfolio.html" class="link menu-link">Portfolio</a>
               </li>
               <li>
-                <a href="#" class="menu-navig">Contacts</a>
+                <a href="#" class="link menu-link">Contacts</a>
               </li>
             </ul>
+          
 
+          <div class="menu-kontakt">
             <ul class="list menu-box">
-              <li class="menu-kontakt">
+              <li>
                 <a class="link menu-cont" href="tel:+110001111111"
                   >+11 (000) 111-11-11</a
                 >
@@ -94,37 +100,38 @@
                 >
               </li>
             </ul>
+            
+            <ul class="menu-soc-list list">
+              <li class="team-soc-item">
+                <a href="" class="team-soc-link link">
+                  <svg class="team-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-soc-item">
+                <a href="" class="team-soc-link link">
+                  <svg class="team-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-soc-item">
+                <a href="" class="team-soc-link link">
+                  <svg class="team-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-soc-item">
+                <a href="" class="team-soc-link link">
+                  <svg class="team-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
-          <ul class="menu-soc-list list">
-            <li class="team-soc-item">
-              <a href="" class="team-soc-link link">
-                <svg class="team-soc-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="team-soc-item">
-              <a href="" class="team-soc-link link">
-                <svg class="team-soc-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="team-soc-item">
-              <a href="" class="team-soc-link link">
-                <svg class="team-soc-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="team-soc-item">
-              <a href="" class="team-soc-link link">
-                <svg class="team-soc-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     </header>
@@ -617,10 +624,13 @@
               <span>
                 <svg class="icon-chec" whidth="10" height="8">
                   <use href="./images/icons.svg#icon-Vector"></use>
-                </svg> </span
-              >I accept the terms and conditions of the
-              <a href="#">Privacy Policy</a></label
-            >
+                </svg>
+              </span>
+              <p>
+                I accept the terms and conditions of the
+                <a href="#">Privacy Policy</a>
+              </p>
+            </label>
           </div>
           <button type="submit" class="modal-but">Send</button>
         </form>
