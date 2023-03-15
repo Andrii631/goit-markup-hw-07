@@ -742,7 +742,7 @@ body{
 }
 @media screen and (max-width: 320px) {
     .modal{
-        width: calc(100%-2*15px);
+        width: calc(100% - 2 * 15px);
     }
     
 }
